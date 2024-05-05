@@ -99,7 +99,7 @@ public class StandAloneTest {
         // 17. Click 'Delete Account' button
         driver.findElement(By.linkText("Delete Account")).click();
 
-        // 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' buttonṭ
+        // 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue'
         String accountDeleted = driver.findElement(By.xpath("//h2/b")).getText();
 
         sa.assertEquals(accountDeleted, "Account Deleted!");
